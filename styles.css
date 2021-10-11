@@ -1,6 +1,9 @@
-#navigation{height: 30px;width: 100%; background: #333333;padding: 10px 0}
-#nav{margin:auto;padding-left: 15px; padding-right: 15px;float: right;}
-#name{padding:2% 2%;font-size: 28px;font-weight: 800;color:#ff4a57}
+#navigation{height: 30px;width: 100%; background: #333333;padding: 10px 0;display: flex;}
+#nav{margin:auto;padding-left: 15px; padding-right: 15px;float: right;display: flex;overflow: hidden;}
+#name{padding:0% 0%;font-size: 28px;font-weight: 800;color:#ff4a57}
+#nav .icon {
+    display: none;
+  }
 span{width: 20%;padding-right: 50px;font-size: 20px;color: #FFFFFF;}
 .colorOnHover:hover{text-decoration:none;color:#ff4a57;}
 #demo{margin:auto;font-size: 15px;color:ivory; bottom: 10px;position: absolute;}
@@ -66,4 +69,64 @@ footer{display: flex;justify-content: center;}
     60% { content: "Geek";}
     80% { content: "Junky";}
     100% { content: "TERROR";}
+}
+
+/* @media screen and (min-width: 601px) {
+    #demo{
+    font-size:20px;
+    }
+} */
+@media all and (max-width:600px) {
+    .body {
+            background-repeat: no-repeat;
+            background-image: url(https://drive.google.com/uc?export=view&id=1AwecV-U4LSb2ADbE5dS8ml7eFjCjwTo5);
+            /* background-size: cover; */
+            height: 100%;
+            /* margin: 0%; */
+            background-color: #0000000A;
+            margin: 0%;
+            /* padding: 10px; */
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            margin: 0%;
+            background-color: #333333A0;
+        }
+    #demo {
+        position: static;
+        left: 6px;
+        bottom:0px;
+        margin-top:5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    #navigation {
+        flex-direction: column;
+    }
+    #nav {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        margin-top: 35px;
+        background-color: #333333A0;
+    }
+    #content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #333333A0;
+            /* height: 100%; */
+            padding: 10px;
+            margin-top: 110px;
+    }
+    #profilePhoto{
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
